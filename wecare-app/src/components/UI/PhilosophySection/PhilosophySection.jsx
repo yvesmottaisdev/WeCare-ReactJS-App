@@ -14,7 +14,7 @@ const PhilosophySection = () => {
                 </PhilosophySectionLiStyled>
                 <PhilosophySectionLiStyled>Women Owned
                 </PhilosophySectionLiStyled>
-                <PhilosophySectionLiStyled>Ethically
+                <PhilosophySectionLiStyled>Ethically Sourced
                 </PhilosophySectionLiStyled>
 
             </PhilosophySectionUlStyled>
