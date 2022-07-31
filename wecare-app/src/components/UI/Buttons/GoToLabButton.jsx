@@ -1,9 +1,9 @@
 import React from 'react'
-import { GoToLabButtonStyled } from './GoToLabButtonStyles'
+import GoToLabButtonStyled from './GoToLabButtonStyles'
 
-const GoToLabButton = ({color, children}) => {
+const GoToLabButton = ({color}) => {
   return (
-    <GoToLabButtonStyled className={"btn-" + color}>{children}</GoToLabButtonStyled>
+    <GoToLabButtonStyled color={color}>Go to The Lab</GoToLabButtonStyled>
   )
 }
 

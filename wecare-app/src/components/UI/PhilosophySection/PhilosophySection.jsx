@@ -1,5 +1,5 @@
 import React from 'react'
-import GoToLabButton from '../Buttons/GoToLabButton'
+import GoToLabButtonStyled from '../Buttons/GoToLabButtonStyles'
 import { PhilosophySectionContainerStyled, PhilosophySectionInfoStyled, PhilosophySectionLiStyled, PhilosophySectionRowStyled, PhilosophySectionUlStyled } from './PhilosophySectionStyles'
 import { Link } from 'react-router-dom'
 
@@ -23,7 +23,7 @@ const PhilosophySection = () => {
             <h2>Our Philosophy</h2>
             <p>We believe that our health is intrinsically connected to the health of others, and the planet.
                 We develop ethical and sustainable products that interconnect all aspects of health.</p>
-                <GoToLabButton className="btn-black"><Link to="/">Go to The Lab</Link></GoToLabButton>
+                <GoToLabButtonStyled colorBlack><Link to="/">Go to The Lab</Link></GoToLabButtonStyled>
         </PhilosophySectionInfoStyled>
         <PhilosophySectionRowStyled>
             <PhilosophySectionUlStyled>

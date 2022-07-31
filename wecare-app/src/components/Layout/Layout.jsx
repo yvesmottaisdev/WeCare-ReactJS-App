@@ -1,7 +1,7 @@
 import React from 'react'
 import { LayoutWrapper } from './LayoutStyles'
 
-const Layout = ({children}) => {
+const Layout = ({color, children}) => {
   return (
     <LayoutWrapper>{children}</LayoutWrapper>
   )
