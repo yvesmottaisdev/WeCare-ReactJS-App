@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 
 export const PhilosophySectionContainerStyled = styled.div`
 
@@ -6,31 +6,6 @@ export const PhilosophySectionContainerStyled = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-
-    span{
-
-        background-color: var(--black);
-
-    }
-
-    span > a {
-
-        color: var(--white);
-
-    }
-
-    span:hover {
-
-        background-color: var(--white);
-        transform: none;
-
-    }
-
-    span:hover > a {
-
-        color: var(--black);
-
-    }
 
 `;
 
@@ -75,7 +50,7 @@ export const PhilosophySectionInfoStyled = styled.div `
     flex-direction: column;
     align-items: center;
 
-    h2{
+    & h2{
 
         margin: 5% 0 1%;
         font-size: 2.4em;
@@ -83,7 +58,7 @@ export const PhilosophySectionInfoStyled = styled.div `
 
     }
 
-    p{
+    & p{
 
         padding: 0 20% 1.5%;
         font-size: 1.3em;

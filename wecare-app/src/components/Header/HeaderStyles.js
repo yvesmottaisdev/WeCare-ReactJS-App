@@ -72,7 +72,7 @@ export const NavbarLiStyled = styled.li`
 
     margin: 0 2%;
 
-    &:hover{
+    :hover{
 
         text-decoration: underline 1px var(--black);
         text-underline-offset: 6px;
@@ -88,7 +88,7 @@ export const NavbarLogoStyled = styled.div`
     padding: 0 1%;
     cursor: pointer;
 
-    a{
+    &{
 
         text-decoration: none;
 
