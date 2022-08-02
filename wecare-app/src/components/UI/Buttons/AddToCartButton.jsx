@@ -1,8 +1,9 @@
 import React from 'react'
+import { AddToCartButtonStyled } from './AddToCartButtonStyles'
 
 const AddToCartButton = () => {
   return (
-    <AddToCartButton>Add to Cart</AddToCartButton>
+    <AddToCartButtonStyled>Add to Cart</AddToCartButtonStyled>
   )
 }
 

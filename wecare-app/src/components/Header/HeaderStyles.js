@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 
 export const HeaderContainerStyled = styled.div`
 
@@ -7,6 +7,12 @@ export const HeaderContainerStyled = styled.div`
     display: flex;
     flex-direction: column;
     z-index: 2;
+
+    a{
+
+        color: var(--black);
+
+    }
 
 `;
 

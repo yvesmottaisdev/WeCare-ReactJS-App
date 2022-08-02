@@ -14,7 +14,7 @@ export const GoToLabButtonStyled = styled.span`
     & a {
 
         color: ${props => 
-        (props.color == "var(--black)" ? 'var(--white)' : 'var(--black)')};
+        (props.color === "var(--black)" ? 'var(--white)' : 'var(--black)')};
         font-size: 1em;
         font-weight: 700;
 
@@ -24,14 +24,14 @@ export const GoToLabButtonStyled = styled.span`
 
         transform: scale(0.98, 0.98);
         background-color: ${props => 
-        (props.color == "var(--black)" ? 'var(--white)' : 'var(--black)')};
+        (props.color === "var(--black)" ? 'var(--white)' : 'var(--black)')};
 
     }
 
     :hover > a {
 
         color: ${props => 
-        (props.color == "var(--black)" ? 'var(--black)' : 'var(--white)')};
+        (props.color === "var(--black)" ? 'var(--black)' : 'var(--white)')};
         font-weight: 600;
 
     }

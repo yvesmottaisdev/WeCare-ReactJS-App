@@ -1,9 +1,18 @@
+import grapefruit from '../images/grapefruit-product.png'
+import quavagreen from '../images/quava-green-product.png'
+import lightskin from '../images/light-face-product.png'
+import olongtea from '../images/olog-tea-product.png'
+import goodbyedryness from '../images/peach-beach-product.png'
+import highlavender from '../images/high-lavender-product-LA.png'
+import mintmosturizing from '../images/mint-mosturizing-product-LA.png'
+import refreshnow from '../images/refresh-product-LA.png'
+
 export const products = [
 
     {
         id: 1,
         name: 'Grapefruit L',
-        img: '',
+        img: `${grapefruit}`,
         price: 12.99,
         collection: 0,
         desc: 0 
@@ -13,7 +22,7 @@ export const products = [
     {
         id: 2,
         name: 'Quava Green',
-        img: '',
+        img: `${quavagreen}`,
         price: 12.99,
         collection: 0,
         desc: 0 
@@ -23,7 +32,7 @@ export const products = [
     {
         id: 3,
         name: 'Light Skin',
-        img: '',
+        img: `${lightskin}`,
         price: 12.99,
         collection: 0,
         desc: 2 
@@ -33,7 +42,7 @@ export const products = [
     {
         id: 4,
         name: 'Olong Tea',
-        img: '',
+        img: `${olongtea}`,
         price: 12.99,
         collection: 0,
         desc: 2 
@@ -43,7 +52,7 @@ export const products = [
     {
         id: 5,
         name: 'Goodbye Dryness',
-        img: '',
+        img:  `${goodbyedryness}`,
         price: 12.99,
         collection: 0,
         desc: 2 
@@ -53,7 +62,7 @@ export const products = [
     {
         id: 6,
         name: 'The Freshness',
-        img: '',
+        img:  `${goodbyedryness}`,
         price: 12.99,
         collection: 0,
         desc: 1 
@@ -63,7 +72,7 @@ export const products = [
     {
         id: 7,
         name: 'Watermelon Kiss',
-        img: '',
+        img:  `${goodbyedryness}`,
         price: 12.99,
         collection: 0,
         desc: 1  
@@ -73,7 +82,7 @@ export const products = [
     {
         id: 8,
         name: 'Crystal Peach',
-        img: '',
+        img:  `${goodbyedryness}`,
         price: 12.99,
         collection: 0,
         desc: 0   
@@ -83,7 +92,7 @@ export const products = [
     {
         id: 9,
         name: 'High Lavender',
-        img: '',
+        img:  `${highlavender}`,
         price: 12.99,
         collection: 1,
         desc: 3 
@@ -93,7 +102,7 @@ export const products = [
     {
         id: 10,
         name: 'Mint Mosturizing',
-        img: '',
+        img:  `${mintmosturizing}`,
         price: 12.99,
         collection: 1,
         desc: 3
@@ -103,7 +112,7 @@ export const products = [
     {
         id: 11,
         name: 'Re-fresh Now',
-        img: '',
+        img:  `${refreshnow}`,
         price: 12.99,
         collection: 1,
         desc: 3

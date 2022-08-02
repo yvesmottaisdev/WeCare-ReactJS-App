@@ -1,18 +1,27 @@
 import React from 'react'
-import ProductContainer from '../ProductContainer'
-import { CarousselContainerStyled } from './CarousselStyles'
+import { products } from '../../data/Products'
+import ProductContainer from '../Product/ProductContainer'
+import { Carousellh1Styled, CarousselContainerStyled, CarousselInnerContainerStyled } from './CarousselStyles'
 
 const Caroussel = () => {
+
   return (
-    <CarousselContainerStyled>
-        {products.map (products => (
-        <ProductContainer 
-        key={product.id}
-        productName = {product.name}
-        productImage = {product.img}
-        productPrice = {product.price}>
-        </ProductContainer>))}
+    <CarousselContainerStyled gridLenght={products.length}>
+    <Carousellh1Styled>Best Sellers</Carousellh1Styled>
+    <CarousselInnerContainerStyled>
+          
+          {products.map (products => (
+          <ProductContainer
+          key = {products.id}
+          name = {products.name}
+          img = {products.img}
+          price = {products.price}
+          />
+          ))}
+
+    </CarousselInnerContainerStyled>
     </CarousselContainerStyled>
+    
   )
 }
 
