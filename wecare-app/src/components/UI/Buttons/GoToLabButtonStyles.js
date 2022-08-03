@@ -1,38 +1,34 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom'
+
+export const GoToLabButtonLinkStyled = styled(Link)`
+
+    width: 15vw;
+    height: 7vh;
+    transition: 0.2s;
+
+    :hover span {
+
+        color: var(--white);
+        background-color: var(--black);
+
+    } 
+
+`;
 
 export const GoToLabButtonStyled = styled.span`
 
-    width: 15vw;
-    padding: 1% 0;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
-    background-color: ${props => 
-    (props.color)};
+    color: var(--black);
+    background-color: var(--white);
     border: 1px solid var(--black);
-    transition: 0.2s;
     cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
 
-    & a {
-
-        color: ${props => 
-        (props.color === "var(--black)" ? 'var(--white)' : 'var(--black)')};
-        font-size: 1em;
-        font-weight: 700;
-
-    }
-
-    :hover {
-
-        transform: scale(0.98, 0.98);
-        background-color: ${props => 
-        (props.color === "var(--black)" ? 'var(--white)' : 'var(--black)')};
-
-    }
-
-    :hover > a {
-
-        color: ${props => 
-        (props.color === "var(--black)" ? 'var(--black)' : 'var(--white)')};
-        font-weight: 600;
-
-    }
 `;

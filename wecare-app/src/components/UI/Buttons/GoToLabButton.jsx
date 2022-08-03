@@ -1,10 +1,11 @@
 import React from 'react'
-import { GoToLabButtonStyled } from './GoToLabButtonStyles'
+import { GoToLabButtonLinkStyled, GoToLabButtonStyled } from './GoToLabButtonStyles'
 import { Link } from 'react-router-dom'
 
-const GoToLabButton = ({color}) => {
+
+const GoToLabButton = () => {
   return (
-    <GoToLabButtonStyled color={color}><Link to="/">Go to The Lab</Link></GoToLabButtonStyled>
+    <GoToLabButtonLinkStyled to="/product/thelab"><GoToLabButtonStyled>Go to The Lab</GoToLabButtonStyled></GoToLabButtonLinkStyled>
   )
 }
 

@@ -1,20 +1,15 @@
-import Caroussel from './components/Caroussel/Caroussel';
-import Header from './components/Header/Header';
-import Layout from './components/Layout/Layout';
-import NewCollection from './components/NewCollection/NewCollection';
-import BannerHero from './components/BannerHero/BannerHero';
-import PhilosophySection from './components/PhilosophySection/PhilosophySection';
-import FooterAnimation from './components/UI/FooterAnimation/FooterAnimation';
+import React from 'react'
+import Layout from './components/Layout/Layout'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import Routes from './routes/Routes'
 
 function App() {
   return (
     <Layout>
       <Header/>
-      <BannerHero/>
-      <PhilosophySection/>
-      <Caroussel/>
-      <NewCollection/>
-      <FooterAnimation/>
+      <Routes/>
+      <Footer/>
     </Layout>
   );
 }

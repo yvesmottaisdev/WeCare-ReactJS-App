@@ -17,10 +17,10 @@ const Header = () => {
           <NavbarElementStyled bRight>
             <NavbarUlStyled>
               <NavbarLiStyled>
-                <Link to="/">The Lab</Link>
+                <Link to="/product/thelab">The Lab</Link>
               </NavbarLiStyled>
               <NavbarLiStyled>
-              <Link to="/">Products</Link>
+              <Link to="/product">Products</Link>
               </NavbarLiStyled>
             </NavbarUlStyled>
           </NavbarElementStyled>
@@ -36,7 +36,7 @@ const Header = () => {
           <NavbarElementStyled bLeft>
           <NavbarUlStyled jcend>
               <NavbarLiStyled>
-              <Link to="/">Cart ()</Link>
+              <Link to="/cart">Cart ()</Link>
               </NavbarLiStyled>
             </NavbarUlStyled>
           </NavbarElementStyled>

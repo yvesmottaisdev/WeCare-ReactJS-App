@@ -15,7 +15,8 @@ export const products = [
         img: `${grapefruit}`,
         price: 12.99,
         collection: 0,
-        desc: 0 
+        desc: 0,
+        bestsellers: true
 
     },
 
@@ -45,7 +46,8 @@ export const products = [
         img: `${olongtea}`,
         price: 12.99,
         collection: 0,
-        desc: 2 
+        desc: 2,
+        bestsellers: true 
 
     },
 
@@ -65,7 +67,8 @@ export const products = [
         img:  `${goodbyedryness}`,
         price: 12.99,
         collection: 0,
-        desc: 1 
+        desc: 1,
+        bestsellers: true
 
     },
 
@@ -75,7 +78,8 @@ export const products = [
         img:  `${goodbyedryness}`,
         price: 12.99,
         collection: 0,
-        desc: 1  
+        desc: 1 ,
+        bestsellers: true 
 
     },
 
@@ -85,7 +89,8 @@ export const products = [
         img:  `${goodbyedryness}`,
         price: 12.99,
         collection: 0,
-        desc: 0   
+        desc: 0,
+        bestsellers: true   
 
     },
 
@@ -95,7 +100,8 @@ export const products = [
         img:  `${highlavender}`,
         price: 12.99,
         collection: 1,
-        desc: 3 
+        desc: 3, 
+        bestsellers: true
 
     },
 
@@ -115,7 +121,8 @@ export const products = [
         img:  `${refreshnow}`,
         price: 12.99,
         collection: 1,
-        desc: 3
+        desc: 3,
+        bestsellers: true
 
     },
 
