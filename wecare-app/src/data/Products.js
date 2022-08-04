@@ -126,5 +126,20 @@ export const products = [
 
     },
 
-
 ];
+
+export const TotalProducts = products.length;
+
+export const Products = products.reduce((acc, products) => {
+
+    if(!acc[products.desc]) {
+
+        acc[products.desc] = []
+
+    }
+
+    acc[products.desc] = [...acc[products.desc], products];
+
+    return acc;
+
+}, {})

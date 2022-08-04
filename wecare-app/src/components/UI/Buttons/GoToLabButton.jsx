@@ -1,6 +1,5 @@
 import React from 'react'
 import { GoToLabButtonLinkStyled, GoToLabButtonStyled } from './GoToLabButtonStyles'
-import { Link } from 'react-router-dom'
 
 
 const GoToLabButton = () => {

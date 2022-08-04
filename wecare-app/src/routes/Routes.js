@@ -11,9 +11,9 @@ const Routes = () => {
 
             <ReactDomRoutes>
                 <Route exact path='/' element = {<Home/>}/>
-                {/* <Route exact pacth='/product' element = {<Product/>}/>
-                <Route exact pacth='/products/thelab' element = {<TheLab/>}/>
-                <Route exact pacth='/cart' element = {<Cart/>}/> */}
+                {/* <Route exact path='/product' element = {<Product/>}/>
+                <Route exact path='/products/thelab' element = {<TheLab/>}/>
+                <Route exact path='/cart' element = {<Cart/>}/> */}
 
             </ReactDomRoutes>
 
