@@ -3,7 +3,6 @@ import rootReducer from './root-reducer'
 import { persistStore } from 'redux-persist'
 
 const initialState = {};
-const middleware = [];
 
 export const store = createStore(
 

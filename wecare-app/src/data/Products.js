@@ -14,9 +14,8 @@ export const products = [
         name: 'Grapefruit L',
         img: `${grapefruit}`,
         price: 12.99,
-        collection: 0,
-        desc: 0,
-        bestsellers: true
+        bestsellers: true,
+        category: 'dryskin'
 
     },
 
@@ -25,8 +24,7 @@ export const products = [
         name: 'Quava Green',
         img: `${quavagreen}`,
         price: 12.99,
-        collection: 0,
-        desc: 0 
+        category: 'dryskin'
 
     },
 
@@ -35,8 +33,8 @@ export const products = [
         name: 'Light Skin',
         img: `${lightskin}`,
         price: 12.99,
-        collection: 0,
-        desc: 2 
+        bestsellers: true,
+        category: 'dryskin'
 
     },
 
@@ -45,9 +43,7 @@ export const products = [
         name: 'Olong Tea',
         img: `${olongtea}`,
         price: 12.99,
-        collection: 0,
-        desc: 2,
-        bestsellers: true 
+        category: 'dryskin'
 
     },
 
@@ -56,8 +52,8 @@ export const products = [
         name: 'Goodbye Dryness',
         img:  `${goodbyedryness}`,
         price: 12.99,
-        collection: 0,
-        desc: 2 
+        bestsellers: true,
+        category: 'nutrients'
 
     },
 
@@ -66,9 +62,8 @@ export const products = [
         name: 'The Freshness',
         img:  `${goodbyedryness}`,
         price: 12.99,
-        collection: 0,
-        desc: 1,
-        bestsellers: true
+        bestsellers: true,
+        category: 'nutrients'
 
     },
 
@@ -77,9 +72,7 @@ export const products = [
         name: 'Watermelon Kiss',
         img:  `${goodbyedryness}`,
         price: 12.99,
-        collection: 0,
-        desc: 1 ,
-        bestsellers: true 
+        category: 'nutrients'
 
     },
 
@@ -88,9 +81,8 @@ export const products = [
         name: 'Crystal Peach',
         img:  `${goodbyedryness}`,
         price: 12.99,
-        collection: 0,
-        desc: 0,
-        bestsellers: true   
+        bestsellers: true,
+        category: 'nutrients'
 
     },
 
@@ -99,9 +91,9 @@ export const products = [
         name: 'High Lavender',
         img:  `${highlavender}`,
         price: 12.99,
-        collection: 1,
-        desc: 3, 
-        bestsellers: true
+        bestsellers: true,
+        newcollection: true,
+        category: 'neutral'
 
     },
 
@@ -110,8 +102,8 @@ export const products = [
         name: 'Mint Mosturizing',
         img:  `${mintmosturizing}`,
         price: 12.99,
-        collection: 1,
-        desc: 3
+        newcollection: true,
+        category: 'neutral'
 
     },
 
@@ -120,9 +112,8 @@ export const products = [
         name: 'Re-fresh Now',
         img:  `${refreshnow}`,
         price: 12.99,
-        collection: 1,
-        desc: 3,
-        bestsellers: true
+        newcollection: true,
+        category: 'neutral'
 
     },
 
@@ -132,13 +123,13 @@ export const TotalProducts = products.length;
 
 export const Products = products.reduce((acc, products) => {
 
-    if(!acc[products.desc]) {
+    if(!acc[products.category]) {
 
-        acc[products.desc] = []
+        acc[products.category] = []
 
     }
 
-    acc[products.desc] = [...acc[products.desc], products];
+    acc[products.category] = [...acc[products.category], products];
 
     return acc;
 

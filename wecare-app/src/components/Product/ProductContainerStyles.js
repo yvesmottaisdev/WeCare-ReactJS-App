@@ -6,7 +6,7 @@ export const ProductContainerStyled = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10%;
+    margin: 0;
 
 `;
 
@@ -37,5 +37,18 @@ export const ProductInfoPStyled = styled.p`
     font-weight: 400;
     margin-bottom: 5%;
     cursor: default;
+
+`;
+
+export const ProductsContainerStyled = styled.div`
+
+    width: 100%;
+    height: auto;
+    margin: 5% 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
 
 `;
