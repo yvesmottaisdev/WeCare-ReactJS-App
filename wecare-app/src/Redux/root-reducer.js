@@ -3,6 +3,7 @@ import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import productsReducer from './products/products-reducer'
 import categoriesReducer from './categories/categories-reducer'
+import bestSellersReducer from './best-sellers/best-sellers-reducer'
 
 const persistConfig = {
 
@@ -15,7 +16,8 @@ const persistConfig = {
 const rootReducer = combineReducers({
 
     products: productsReducer,
-    categories: categoriesReducer
+    categories: categoriesReducer,
+    bestSellers: bestSellersReducer
 
 })
 

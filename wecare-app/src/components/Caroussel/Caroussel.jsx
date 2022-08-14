@@ -1,5 +1,6 @@
 import React from "react";
 import { products } from "../../data/Products";
+import { useSelector } from 'react-redux';
 import ProductContainer from "../Product/ProductContainer";
 import {
   Carousellh1Styled,
@@ -8,22 +9,19 @@ import {
 } from "./CarousselStyles";
 
 const Caroussel = () => {
+
+  const bestSellers = useSelector(state => state.bestSellers.bestSellers)
+
   return (
-    <CarousselContainerStyled gridLenght={products.length}>
+
+    <CarousselContainerStyled gridLenght={bestSellers.length}>
       <Carousellh1Styled>Best Sellers</Carousellh1Styled>
       <CarousselInnerContainerStyled>
-
-        {products.map((products) => (
-
-          products.bestsellers ? 
+        {bestSellers.map(bestSellers => (
           <ProductContainer
-            key={products.id}
-            name={products.name}
-            img={products.img}
-            price={products.price}
+          key={bestSellers.id}
+          {...bestSellers}
           />
-          
-          : null
 
         ))}
         

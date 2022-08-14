@@ -123,14 +123,36 @@ export const TotalProducts = products.length;
 
 export const Products = products.reduce((acc, products) => {
 
+    
     if(!acc[products.category]) {
-
+        
         acc[products.category] = []
-
+        
     }
 
     acc[products.category] = [...acc[products.category], products];
 
+
+
     return acc;
 
 }, {})
+
+
+export const BestSellers = () => {
+
+    let bs = []
+
+    for (let i in products){
+
+        if(products[i].bestsellers){
+
+            bs.push(products[i])
+
+        }
+        
+    }
+
+    return bs
+
+}
