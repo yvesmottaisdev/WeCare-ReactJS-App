@@ -19,7 +19,7 @@ const Category = ({title, category}) => {
 
   return (
     <CategoryCardStyled
-    selected={selectedCategory}
+    selected={category === selectedCategory}
     onClick={() => handlerFilter(category)}
     >
         <CategoryCardh2Styled>{title}</CategoryCardh2Styled>

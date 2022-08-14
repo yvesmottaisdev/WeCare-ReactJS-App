@@ -1,15 +1,15 @@
 import React from 'react'
 import ProductsContainer from '../Product/ProductsContainer'
 import Categories from '../Categories/Categories'
-import { FilterContainerStyled } from './FilterStyles'
+import { FilterContainerh2Styled, FilterContainerStyled } from './FilterStyles'
 
 const Filter = () => {
 
   return (
     <FilterContainerStyled>
-        <h2>
+        <FilterContainerh2Styled>
           Sort our products based on your necessities
-        </h2>
+        </FilterContainerh2Styled>
         <Categories/>
         <ProductsContainer/>
     </FilterContainerStyled>

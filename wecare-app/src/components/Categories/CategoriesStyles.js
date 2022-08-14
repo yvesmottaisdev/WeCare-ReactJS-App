@@ -6,7 +6,10 @@ export const CategoryCardStyled = styled.div`
     border: 1px solid var(--black);
     border-right: none;
     padding: 1%;
-    background-color: var(--white);
+    background-color: ${({ selected }) =>
+    selected ? 'var(--black)' : 'var(--white)'};
+    color: ${({ selected }) =>
+    selected ? 'var(--white)' : 'var(--black)'};
     transition: 0.2s;
     cursor: pointer;
     text-align: center;
@@ -35,7 +38,6 @@ export const CategoryCardh2Styled = styled.h2`
 
     font-size: 1em;
     font-weight: 500;
-    color: var(--black);
 
 `;
 

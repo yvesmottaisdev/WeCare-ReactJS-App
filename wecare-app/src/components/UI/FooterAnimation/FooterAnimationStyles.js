@@ -7,7 +7,6 @@ export const FooterAnimationStyled = styled.div`
     justify-content: center;
     align-items: center;
     padding: 3% 0;
-    border-bottom: 1px solid var(--black);
 
 `;
 

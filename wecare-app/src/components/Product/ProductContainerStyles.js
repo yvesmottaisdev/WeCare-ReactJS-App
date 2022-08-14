@@ -47,8 +47,13 @@ export const ProductsContainerStyled = styled.div`
     margin: 5% 0;
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 5%;
     justify-content: center;
     align-items: center;
+
+    > div{
+
+        margin: 2vw;
+
+    }
 
 `;
