@@ -13,7 +13,7 @@ const BannerHero = () => {
       <BannerHeroSubtitleStyled>
         Create your desired product at our Lab
       </BannerHeroSubtitleStyled>
-      <GoToLabButton></GoToLabButton>
+      <GoToLabButton>Go to The Lab</GoToLabButton>
     </BannerHeroContainerStyled>
   )
 }

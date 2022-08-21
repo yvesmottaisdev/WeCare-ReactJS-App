@@ -138,21 +138,20 @@ export const Products = products.reduce((acc, products) => {
 
 }, {})
 
-
 export const BestSellers = () => {
 
-    let bs = []
+    let items = []
 
     for (let i in products){
 
         if(products[i].bestsellers){
 
-            bs.push(products[i])
+            items.push(products[i])
 
         }
         
     }
 
-    return bs
+    return items
 
 }

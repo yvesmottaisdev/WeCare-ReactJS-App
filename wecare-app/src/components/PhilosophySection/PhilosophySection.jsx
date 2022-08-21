@@ -22,7 +22,7 @@ const PhilosophySection = () => {
             <h2>Our Philosophy</h2>
             <p>We believe that our health is intrinsically connected to the health of others, and the planet.
                 We develop ethical and sustainable products that interconnect all aspects of health.</p>
-                <GoToLabButton></GoToLabButton>
+                <GoToLabButton>Go to The Lab</GoToLabButton>
         </PhilosophySectionInfoStyled>
         <PhilosophySectionRowStyled>
             <PhilosophySectionUlStyled>

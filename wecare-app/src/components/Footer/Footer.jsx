@@ -20,7 +20,7 @@ const Footer = () => {
                 </FooterLinksLiStyled>
 
                 <FooterLinksLiStyled>
-                    <Link to="/products">
+                    <Link to="/product">
                     Products
                     </Link>
                 </FooterLinksLiStyled>
