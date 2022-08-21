@@ -1,14 +1,10 @@
 import React from 'react'
 import { AddToCartButtonStyled } from './AddToCartButtonStyles'
-import {useDispatch} from 'react-redux/es/exports'
-import * as cartActions from '../../../Redux/cart/cart-actions'
 
-const AddToCartButton = ({name, price, img, id}) => {
-
-  const dispatch = useDispatch()
+const AddToCartButton = ({onClick}) => {
 
   return (
-    <AddToCartButtonStyled onClick={() => dispatch(cartActions.addToCart({img, name, price, id}))}>Add to Cart</AddToCartButtonStyled>
+    <AddToCartButtonStyled onClick={onClick}>Add to Cart</AddToCartButtonStyled>
   )
 }
 

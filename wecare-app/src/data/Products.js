@@ -11,7 +11,7 @@ export const products = [
 
     {
         id: 1,
-        name: 'Grapefruit L',
+        name: 'Grapefruit L Serum',
         img: `${grapefruit}`,
         price: 12.99,
         bestsellers: true,
@@ -21,7 +21,7 @@ export const products = [
 
     {
         id: 2,
-        name: 'Quava Green',
+        name: 'Quava Green Serum',
         img: `${quavagreen}`,
         price: 12.99,
         category: 'dryskin'
@@ -30,7 +30,7 @@ export const products = [
 
     {
         id: 3,
-        name: 'Light Skin',
+        name: 'Light Skin Serum',
         img: `${lightskin}`,
         price: 12.99,
         bestsellers: true,
@@ -40,7 +40,7 @@ export const products = [
 
     {
         id: 4,
-        name: 'Olong Tea',
+        name: 'Olong Tea Serum',
         img: `${olongtea}`,
         price: 12.99,
         category: 'dryskin'
@@ -49,7 +49,7 @@ export const products = [
 
     {
         id: 5,
-        name: 'Goodbye Dryness',
+        name: 'Goodbye Dryness Serum',
         img:  `${goodbyedryness}`,
         price: 12.99,
         bestsellers: true,
@@ -59,7 +59,7 @@ export const products = [
 
     {
         id: 6,
-        name: 'The Freshness',
+        name: 'The Freshness Serum',
         img:  `${goodbyedryness}`,
         price: 12.99,
         bestsellers: true,
@@ -69,7 +69,7 @@ export const products = [
 
     {
         id: 7,
-        name: 'Watermelon Kiss',
+        name: 'Watermelon Kiss Serum',
         img:  `${goodbyedryness}`,
         price: 12.99,
         category: 'nutrients'
@@ -78,7 +78,7 @@ export const products = [
 
     {
         id: 8,
-        name: 'Crystal Peach',
+        name: 'Crystal Peach Serum',
         img:  `${goodbyedryness}`,
         price: 12.99,
         bestsellers: true,
@@ -88,7 +88,7 @@ export const products = [
 
     {
         id: 9,
-        name: 'High Lavender',
+        name: 'High Lavender Serum',
         img:  `${highlavender}`,
         price: 12.99,
         bestsellers: true,
@@ -99,7 +99,7 @@ export const products = [
 
     {
         id: 10,
-        name: 'Mint Mosturizing',
+        name: 'Mint Mosturizing Serum',
         img:  `${mintmosturizing}`,
         price: 12.99,
         newcollection: true,
@@ -109,7 +109,7 @@ export const products = [
 
     {
         id: 11,
-        name: 'Re-fresh Now',
+        name: 'Re-fresh Now Serum',
         img:  `${refreshnow}`,
         price: 12.99,
         newcollection: true,

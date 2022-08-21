@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const IncreaseStyled = styled.button`
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     appearance: none;
     border: 1px solid var(--black);
     width: 30px;

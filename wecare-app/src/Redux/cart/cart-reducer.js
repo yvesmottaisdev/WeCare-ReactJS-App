@@ -1,5 +1,5 @@
 import React from 'react'
-import { ADD_TO_CART, CLEAR_CART, removeFromCart, REMOVE_FROM_CART } from './cart-actions'
+import { ADD_TO_CART, CLEAR_CART, REMOVE_FROM_CART } from './cart-actions'
 import { addItemToCart, removeItemFromCart } from './cart-utils'
 
 const INITIAL_STATE = {

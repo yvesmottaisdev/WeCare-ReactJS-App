@@ -25,11 +25,7 @@ const ProductsContainer = () => {
             //     if(limit >= items.id || selectedCategory){
             //         return 
                 <ProductContainer
-                    key = {items.id}
-                    name = {items.name}
-                    img = {items.img}
-                    price = {items.price}
-                    category = {items.category}
+                    key={items.id} {...items}
                     />
                 // }
 

@@ -61,28 +61,35 @@ export const CartProductsContainerStyled = styled.div`
 
 export const CartProductCardStyled = styled.div`
 
-    width: fit-content;
-    height: 15vh;
+    width: 30vw;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     padding: 1.5% 5%;
     border-bottom: 1px solid var(--black);
+    border-right: 1px solid var(--black);
     margin-top: 0%;
+    position: relative;
+
+    :last-of-type{
+
+        border-bottom: none;
+
+    }
 
 `;
 
 export const CartProductCardImgStyled = styled.img`
 
-    width: 2vw;
-    padding: 0 2.5% 0 0;
+    width: 30px;
 
 `;
 
 export const CartProductCardInfoStyled = styled.div`
 
-    padding: 0 2.5% 0 0;
+    margin: 0 5%;
 
 `;
 
@@ -90,17 +97,24 @@ export const CartProductCardNameStyled = styled.p`
 
     font-size: 1.1em;
     font-weight: 700;
-    padding: 1.5% 0;
+
+`;
+
+export const CartProductCardItemsStyled = styled.p`
+
+    font-size: 1em;
+    font-weight: 400;
 
 `;
 
 export const CartProductCardPriceStyled = styled.p`
 
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 400;
 
-    & {
+    & > span{
 
+        font-size: 1.1em;
         font-weight: 600;
 
     }
@@ -136,5 +150,7 @@ export const ProductQuantityContainerStyled = styled.div`
 
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 10%;
 
 `;

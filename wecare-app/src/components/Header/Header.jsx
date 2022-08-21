@@ -1,8 +1,13 @@
 import React from 'react'
 import { BannerContainerStyled, HeaderContainerStyled, NavbarContainerStyled, NavbarElementStyled, BannerParagraphStyled, NavbarUlStyled, NavbarLiStyled, NavbarLogoStyled, NavbarLogoLinkSpanStyled } from './HeaderStyles'
 import { Link } from 'react-router-dom'
+import {useSelector} from 'react-redux/es/exports'
+
 
 const Header = () => {
+
+  const totalCartItems = useSelector(state => state.cart.cartItems.length)
+
   return (
     <HeaderContainerStyled>
 
@@ -36,7 +41,7 @@ const Header = () => {
           <NavbarElementStyled bLeft>
           <NavbarUlStyled jcend>
               <NavbarLiStyled>
-              <Link to="/cart">Cart ()</Link>
+              <Link to="/cart">Cart ( {totalCartItems} )</Link>
               </NavbarLiStyled>
             </NavbarUlStyled>
           </NavbarElementStyled>
