@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+const media = {
+
+    mobile: '@media(max-width: 425px)',
+    tablet: '@media(max-width: 768px)'
+
+}
+
 export const CarousselContainerStyled = styled.div`
 
     padding-bottom: 5%;
@@ -14,6 +21,18 @@ export const CarousselContainerStyled = styled.div`
 
     }
 
+    ${media.mobile}{
+
+        height: 70vh;
+
+    }
+
+    ${media.tablet}{
+
+        height: 70vh;
+
+    }
+
 `;
 
 export const CarousselInnerContainerStyled = styled.div`
@@ -25,6 +44,7 @@ export const CarousselInnerContainerStyled = styled.div`
     overflow-x: scroll;
     scroll-snap-type: x proximity;
     padding: 0 0 1.5% 0;
+    
     
     :before, :after{
 
@@ -51,8 +71,8 @@ export const CarousselInnerContainerStyled = styled.div`
     ::webkit-scrollbar:vertical{
 
     display: none;
-
-}
+    
+    }
 
 `;
 

@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+const media = {
+
+    mobile: '@media(max-width: 425px)',
+    tablet: '@media(max-width: 768px)'
+
+}
+
 export const FooterAnimationStyled = styled.div`
 
     width: 100%;
@@ -7,6 +14,12 @@ export const FooterAnimationStyled = styled.div`
     justify-content: center;
     align-items: center;
     padding: 3% 0;
+
+    ${media.mobile}{
+
+        height: 20vh;
+
+    }
 
 `;
 
@@ -29,6 +42,12 @@ export const FooterAnimationImageStyled = styled.img`
             transform: rotate(360deg);
 
         }
+
+    }
+
+    ${media.mobile}{
+
+        width: 25%;
 
     }
 

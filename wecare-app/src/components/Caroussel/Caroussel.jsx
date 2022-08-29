@@ -19,7 +19,7 @@ const Caroussel = () => {
       <CarousselInnerContainerStyled>
         {bestSellers.map(bestSellers => (
           <ProductContainer
-          key={bestSellers.id} // CAMBIÉ ACÁ
+          key={bestSellers.id}
           {...bestSellers}
           />
 

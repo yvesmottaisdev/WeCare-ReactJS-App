@@ -1,10 +1,17 @@
 import styled from "styled-components";
 import { Link } from 'react-router-dom'
 
+const media = {
+
+    mobile: '@media(max-width: 425px)',
+    tablet: '@media(max-width: 768px)'
+
+}
+
 export const GoToLabButtonLinkStyled = styled(Link)`
 
-    width: 15vw;
-    height: 7vh;
+    width: 200px;
+    height: 50px;
     transition: 0.2s;
 
     :hover span {
@@ -12,7 +19,21 @@ export const GoToLabButtonLinkStyled = styled(Link)`
         color: var(--white);
         background-color: var(--black);
 
-    } 
+    }
+
+    ${media.mobile}{
+
+        width: 200px;
+        height: 50px;
+
+    }
+
+    ${media.tablet}{
+
+        width: 200px;
+        height: 50px;
+
+    }
 
 `;
 

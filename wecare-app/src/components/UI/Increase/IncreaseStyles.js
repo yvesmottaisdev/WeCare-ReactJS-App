@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+const media = {
+
+    mobile: '@media(max-width: 425px)',
+    tablet: '@media(max-width: 768px)'
+
+}
+
 export const IncreaseStyled = styled.button`
 
     display: flex;
@@ -21,6 +28,13 @@ export const IncreaseStyled = styled.button`
 
         background-color: var(--black);
         color: var(--white);
+
+    }
+
+    ${media.mobile}{
+
+        width: 25px;
+        height: 25px;
 
     }
 

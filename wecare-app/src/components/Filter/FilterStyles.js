@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+const media = {
+
+    mobile: '@media(max-width: 425px)',
+    tablet: '@media(max-width: 768px)'
+
+}
+
 export const FilterContainerStyled = styled.div`
 
     width: 100%;
@@ -16,5 +23,12 @@ export const FilterContainerh2Styled = styled.h2`
 
     font-size: 1.7em;
     margin: 3% 0;
+
+    ${media.mobile}{
+
+        font-size: 1.5em;
+        text-align: center;
+
+    }
 
 `;

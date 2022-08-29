@@ -30,7 +30,7 @@ const CartWrapper = (quantity) => {
 
     {cartItems.length ? (cartItems.map(item => 
     <CartProduct
-        key= {item.id} {...item}/> // CAMBIÉ ACÁ
+        key= {item.id} {...item}/>
     )) : (
 
         <EmptyCartAlertContainerStyled>

@@ -11,7 +11,7 @@ const BannerHero = () => {
       </BannerHeroAnimationStyled>
       </BannerHeroTitleStyled>
       <BannerHeroSubtitleStyled>
-        Create your desired product at our Lab
+        Choose your desired product at our Lab
       </BannerHeroSubtitleStyled>
       <GoToLabButton>Go to The Lab</GoToLabButton>
     </BannerHeroContainerStyled>

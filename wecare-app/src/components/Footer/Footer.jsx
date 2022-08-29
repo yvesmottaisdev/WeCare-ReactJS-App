@@ -14,14 +14,8 @@ const Footer = () => {
                     </Link>
                 </FooterLinksLiStyled>
                 <FooterLinksLiStyled>
-                    <Link to="/product/thelab">
+                    <Link to="/thelab">
                     The Lab 
-                    </Link>
-                </FooterLinksLiStyled>
-
-                <FooterLinksLiStyled>
-                    <Link to="/product">
-                    Products
                     </Link>
                 </FooterLinksLiStyled>
 

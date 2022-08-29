@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+const media = {
+
+    mobile: '@media(max-width: 425px)',
+    tablet: '@media(max-width: 768px)'
+
+}
+
 export const HeaderContainerStyled = styled.div`
 
     width: 100%;
@@ -32,6 +39,14 @@ export const BannerParagraphStyled = styled.p`
 
     color: var(--white);
     font-weight: 600;
+    text-align: center;
+    padding: 0 3%;
+
+    ${media.mobile}{
+
+        font-size: 0.8em;
+
+    }
 
 `;
 
@@ -85,6 +100,12 @@ export const NavbarLiStyled = styled.li`
 
     }
 
+    ${media.mobile}{
+
+        margin: 10%;
+
+    }
+
 `;
 
 export const NavbarLogoStyled = styled.div`
@@ -93,10 +114,17 @@ export const NavbarLogoStyled = styled.div`
     font-weight: 800;
     padding: 0 1%;
     cursor: pointer;
+    text-align: center;
 
     &{
 
         text-decoration: none;
+
+    }
+
+    ${media.mobile}{
+
+        font-size: 1.2em;
 
     }
 

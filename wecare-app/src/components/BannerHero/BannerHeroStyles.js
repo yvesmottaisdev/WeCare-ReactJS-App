@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import backgroundimg from "../../images/background4.jpg";
 
+const media = {
+
+    mobile: '@media(max-width: 425px)',
+    tablet: '@media(max-width: 768px)'
+
+}
 
 export const BannerHeroContainerStyled = styled.div`
 
@@ -15,6 +21,12 @@ export const BannerHeroContainerStyled = styled.div`
     align-items: center;
     text-align: center;
 
+    ${media.mobile}{
+
+        height: 100vh;
+
+    }
+
 `;
 
 export const BannerHeroTitleStyled = styled.h1`
@@ -25,6 +37,12 @@ export const BannerHeroTitleStyled = styled.h1`
     cursor: default;
     color: var(--white);
     margin-top: 5%;
+
+    ${media.mobile}{
+
+        font-size: 3em;
+
+    }
 
 `;
 
@@ -81,5 +99,11 @@ export const BannerHeroSubtitleStyled = styled.h2`
     margin: 2% 0;
     color: var(--white);
     cursor: default;
+
+    ${media.mobile}{
+
+        margin: 5%;
+
+    }
 
 `;

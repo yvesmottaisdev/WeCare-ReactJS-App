@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import backgroundimg from '../../images/background7.png'
 
+const media = {
+
+    mobile: '@media(max-width: 425px)',
+    tablet: '@media(max-width: 768px)'
+
+}
+
 export const NewCollectionContainerStyled = styled.div`
 
     width: 100%;
@@ -13,6 +20,19 @@ export const NewCollectionContainerStyled = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
 
+    ${media.mobile}{
+
+        height: 60vh;
+
+    }
+
+    ${media.tablet}{
+
+        height: 60vh;
+
+    }
+
+
 `;
 
 export const NewCollectionInfoContainerStyled = styled.div`
@@ -23,6 +43,18 @@ export const NewCollectionInfoContainerStyled = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    ${media.mobile}{
+
+        width: 100%;
+
+    }
+
+    ${media.tablet}{
+
+        width: 100%;
+
+    }
 
 `;
 
@@ -36,6 +68,14 @@ export const NewCollectionInfoh2Styled = styled.h2`
     text-decoration: underline solid 3px var(--white);
     text-underline-offset: 10px;
 
+    ${media.mobile}{
+
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 0 5% 5%;
+
+    }
+
 `;
 
 export const NewCollectionInfoPStyled = styled.p`
@@ -46,18 +86,31 @@ export const NewCollectionInfoPStyled = styled.p`
     text-align: center;
     color: var(--white);
 
+    ${media.mobile}{
+
+        display: none;
+
+    }
+
+    ${media.tablet}{
+
+        padding: 5% 10%;
+
+    }
+
 `;
 
 export const NewCollectionInfoLinkStyled = styled.p`
 
     display: flex;
     font-weight: 600;
-    margin: 0 0.5% 0 3%;
+    margin: 0;
     transition: 0.2s;
 
     a {
 
-        width: 8vw;
+        width: 150px;
+        height: 25px;
         text-align: center;
         padding: 10% 5%;
         border: 1px solid var(--white);
@@ -77,6 +130,28 @@ export const NewCollectionInfoLinkStyled = styled.p`
     :hover > a {
 
         color: var(--black);
+
+    }
+
+    ${media.mobile}{
+
+        a {
+
+            width: 150px;
+            height: 25px;
+
+        }
+        
+    }
+
+    ${media.tablet}{
+
+        a {
+
+            width: 150px;
+            height: 25px;
+
+        }
 
     }
 

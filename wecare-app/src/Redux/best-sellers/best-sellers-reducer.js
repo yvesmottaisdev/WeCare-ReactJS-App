@@ -1,4 +1,4 @@
-import { Products, TotalBestSellers, BestSellers} from '../../data/Products'
+import {BestSellers} from '../../data/Products'
 
 
 

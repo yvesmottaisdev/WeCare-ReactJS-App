@@ -7,7 +7,6 @@ const ProductsContainer = () => {
 
     let products = useSelector(state => state.products.products)
 
-    // console.log(Object.entries(products))
     const selectedCategory = useSelector(state => state.categories.selectedCategory)
     if(selectedCategory) {
 
@@ -21,17 +20,9 @@ const ProductsContainer = () => {
     <ProductsContainerStyled>
         { 
              Object.entries(products).map(([ , items]) => items.map( items => 
-            //{
-            //     if(limit >= items.id || selectedCategory){
-            //         return 
                 <ProductContainer
                     key={items.id} {...items}
-                    />
-                // }
-
-                // return null
-            // }
-            
+                />
             ))
         }
     </ProductsContainerStyled>

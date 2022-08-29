@@ -1,5 +1,12 @@
 import styled from 'styled-components'
 
+const media = {
+
+    mobile: '@media(max-width: 425px)',
+    tablet: '@media(max-width: 768px)'
+
+}
+
 export const FooterContainerStyled = styled.div`
 
     width: 100%;
@@ -24,7 +31,7 @@ export const FooterLinksStyled = styled.ul`
 
 export const FooterLinksLiStyled = styled.li`
 
-    width: calc(100% / 3);
+    width: calc(100% / 2);
     height: 7vh;
     display: flex;
     align-items: center;
@@ -70,5 +77,13 @@ export const FooterBannerPStyled = styled.p`
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
+
+    ${media.mobile}{
+
+        font-size: 0.5em;
+        text-align: center;
+        padding: 0 5%;
+
+    }
 
 `;

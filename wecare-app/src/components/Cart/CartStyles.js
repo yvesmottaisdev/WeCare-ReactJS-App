@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+const media = {
+
+    tablet: '@media(max-width: 768px)',
+    desktop: '@media(max-width: 1024px)'
+
+}
 
 export const CartContainerStyled = styled.div`
 
@@ -27,6 +33,16 @@ export const Carth1Styled = styled.div`
 
     }
 
+    ${media.tablet}{
+
+        & {
+
+            font-size: 1.5em;
+            padding: 0 0 0 5%;
+
+        }
+
+    }
 `;
 
 export const EmptyCartAlertContainerStyled = styled.div`
@@ -47,6 +63,18 @@ export const EmptyCarth2Styled = styled.h2`
     font-weight: 600;
     color: var(--gray);
     padding: 0 0 1% 0;
+
+    ${media.desktop}{
+
+        padding: 5%;
+
+    }
+
+    ${media.tablet}{
+
+        padding: 5%;
+
+    }
 
 `;
 
@@ -79,11 +107,31 @@ export const CartProductCardStyled = styled.div`
 
     }
 
+    ${media.desktop}{
+
+        width: 60vw;
+        height: 150px;
+
+    }
+
+    ${media.tablet}{
+
+        width: 90%;
+        height: 150px;
+
+    }
+
 `;
 
 export const CartProductCardImgStyled = styled.img`
 
     width: 30px;
+
+    ${media.tablet}{
+
+        width: 20px;
+
+    }
 
 `;
 
@@ -98,12 +146,25 @@ export const CartProductCardNameStyled = styled.p`
     font-size: 1.1em;
     font-weight: 700;
 
+    ${media.tablet}{
+
+        font-size: 1em;
+
+    }
+
 `;
 
 export const CartProductCardItemsStyled = styled.p`
 
     font-size: 1em;
     font-weight: 400;
+
+    ${media.tablet}{
+
+        font-size: 0.8em;
+        font-weight: 500;
+
+    }
 
 `;
 
@@ -116,6 +177,13 @@ export const CartProductCardPriceStyled = styled.p`
 
         font-size: 1.1em;
         font-weight: 600;
+
+    }
+
+    ${media.tablet}{
+
+        font-size: 0.8em;
+        font-weight: 500;
 
     }
 
@@ -152,5 +220,11 @@ export const ProductQuantityContainerStyled = styled.div`
     align-items: center;
     position: absolute;
     right: 10%;
+
+    ${media.tablet}{
+
+        right: 25px;
+
+    }
 
 `;

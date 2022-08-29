@@ -1,8 +1,16 @@
 import styled from "styled-components";
 
+const media = {
+
+    mobile: '@media(max-width: 425px)',
+    tablet: '@media(max-width: 768px)'
+
+}
+
 export const PhilosophySectionContainerStyled = styled.div`
 
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -40,19 +48,26 @@ export const PhilosophySectionLiStyled = styled.li`
     cursor: default;
     text-decoration: underline wavy 2px var(--black);
     text-underline-offset: 6px;
+
+    ${media.mobile}{
+
+        font-size: 0.8em;
+        line-height: 25px;
+
+    }
 `;
 
 export const PhilosophySectionInfoStyled = styled.div `
 
     width: 100%;
-    height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 50vh;
 
     & h2{
 
-        margin: 5% 0 1%;
         font-size: 2.4em;
         cursor: default;
 
@@ -60,10 +75,29 @@ export const PhilosophySectionInfoStyled = styled.div `
 
     & p{
 
-        padding: 0 20% 1.5%;
+        padding: 30px 15%;
         font-size: 1.3em;
         font-weight: 400;
         cursor: default;
+
+    }
+
+    ${media.mobile}{
+
+        height: 60vh;
+
+        h2 {
+
+            font-size: 2em;
+
+        }
+
+        p{
+
+            font-size: 1em;
+            font-weight: 500;
+
+        }
 
     }
 

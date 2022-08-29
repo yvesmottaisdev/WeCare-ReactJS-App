@@ -13,7 +13,7 @@ const Categories = () => {
         {categories.map(category => (
             <Category
             title={category.title}
-            key={category.id} // CAMBIÉ ACÁ
+            key={category.id}
             category={category.category}
             />
         ))}

@@ -4,7 +4,7 @@ import { GoToLabButtonLinkStyled, GoToLabButtonStyled } from './GoToLabButtonSty
 
 const GoToLabButton = ({children}) => {
   return (
-    <GoToLabButtonLinkStyled to="/product/thelab"><GoToLabButtonStyled>{children}</GoToLabButtonStyled></GoToLabButtonLinkStyled>
+    <GoToLabButtonLinkStyled to="/thelab"><GoToLabButtonStyled>{children}</GoToLabButtonStyled></GoToLabButtonLinkStyled>
   )
 }
 

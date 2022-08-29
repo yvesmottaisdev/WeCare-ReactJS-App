@@ -15,7 +15,7 @@ const NewCollection = () => {
             officiis nam nisi sapiente veniam ipsa reiciendis eos.
         </NewCollectionInfoPStyled>
         <NewCollectionInfoLinkStyled>
-        <Link to="/product/thelab">Shop Now</Link>
+        <Link to="/thelab">Shop Now</Link>
         </NewCollectionInfoLinkStyled>
 
     </NewCollectionInfoContainerStyled>

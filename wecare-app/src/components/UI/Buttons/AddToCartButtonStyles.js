@@ -1,8 +1,15 @@
 import styled from "styled-components";
 
+const media = {
+
+    mobile: '@media(max-width: 425px)',
+    tablet: '@media(max-width: 768px)'
+
+}
+
 export const AddToCartButtonStyled = styled.button`
 
-    width: 20vw;
+    width: 100%;
     border: 1px solid var(--black);
     padding: 5%;
     font-size: 1em;
@@ -16,6 +23,12 @@ export const AddToCartButtonStyled = styled.button`
 
         background-color: var(--black);
         color: var(--white);
+
+    }
+
+    ${media.mobile}{
+
+        height: 50px;
 
     }
 

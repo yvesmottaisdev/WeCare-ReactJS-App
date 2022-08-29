@@ -22,10 +22,7 @@ const Header = () => {
           <NavbarElementStyled bRight>
             <NavbarUlStyled>
               <NavbarLiStyled>
-                <Link to="/product/thelab">The Lab</Link>
-              </NavbarLiStyled>
-              <NavbarLiStyled>
-              <Link to="/product">Products</Link>
+                <Link to="/thelab">The Lab</Link>
               </NavbarLiStyled>
             </NavbarUlStyled>
           </NavbarElementStyled>
