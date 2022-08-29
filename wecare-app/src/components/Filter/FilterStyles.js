@@ -16,6 +16,7 @@ export const FilterContainerStyled = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 150px;
+    border-bottom: 1px solid var(--black);
 
 `;
 
