@@ -16,7 +16,4 @@ We Care Co. es un fake e-commerce de serums faciales.
 
 ### Deploy temporal
 
-[We Care Deploy en Vercel](https://tba)
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[We Care Deploy en Vercel](https://wecare-app.vercel.app/)
