@@ -1,10 +1,9 @@
-# Proyecto Integrador React JS 
+# Acerca de WeCare App
 
-We Care App es parte del proyecto integrador para el curso Full Stack en NUCBA, dentro del módulo de React JS. 
-
-## Acerca de We Care Co.
-
-We Care Co. es un fake e-commerce de serums faciales. 
+WeCare App es un fake e-commerce de serums faciales. En él se pueden
+agregar productos a un carrito, elegir su cantidad, y eliminarlos. El objetivo
+del desarrollo de dicha era cumplir con los requisitos otorgados
+por el mentor en la cursada en **NUCBA** 
 
 ## Tecnologías Aplicadas
 
